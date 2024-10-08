@@ -11,10 +11,10 @@ import com.educandoweb.course.repositories.UserRepository;
 
 @Service
 public class UserService {
-
+	
 	@Autowired
 	private UserRepository repository;
-	
+
 	public List<User> findAll() {
 		return repository.findAll();
 	}
